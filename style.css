@@ -2,6 +2,7 @@
     padding: 0; margin: 0;
     text-decoration: none;
     list-style: none;
+ 
 }
 /* for header page */
 header{
@@ -12,6 +13,8 @@ header{
 .logo img{
     width: 6%;
 }
+
+
 .logo {
     display: flex;
     align-items: center;
@@ -21,6 +24,7 @@ header{
     width: 75%;
     height:28px;
 }
+
 nav ul {
     display: flex;
     align-items: center;
@@ -38,16 +42,41 @@ nav ul li a {
 .header-icon img {
     width: 35px;
 }
+
 .container{
     display: grid;
     grid-template-columns: 30% 1fr;
-    margin: 20px 0;
+    margin: 20px ;
+    gap: 20px;
 }
 .right-side-page1 img{
-    width: 100%;
+    width: 95%;
 }
 .left-side-page1 img{
-    width: 76%;
+    width: 10%;
+}
+.leftSide-icone
+{
+    width: 90%;
+    display: none;
+
+}
+.left-side-page1 ul{
+    border: 1px solid grey;
+    border-bottom: none;
+    border-radius: 5px;
+
+}
+.left-side-page1 ul li{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 7px;
+    gap: 14px;
+
+}
+.left-side-page1 ul li a{
+    color: gray;
 }
 /* list product part  */
 .section2{
@@ -64,6 +93,7 @@ nav ul li a {
     grid-template-columns: repeat(4,1fr); 
     /* gap: 20px; */
     justify-content: space-between; 
+    margin: 20px;
     
 }
 .card1 img {
@@ -114,6 +144,7 @@ nav ul li a {
     grid-template-columns: repeat(4,250px);
     grid-template-rows: repeat(2,350px);
     justify-content: space-between;
+    margin: 20px;
 }
 /* footer page1 but it will be  appplied fot the other pages  */
 footer{
@@ -141,7 +172,7 @@ footer h5 {
 .whole-page2{
     /* border: 2px solid gold; */
     display: grid;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 18% 1fr;
 }
 .left-side-page2 {
     border: 1px solid gray;
@@ -630,6 +661,60 @@ main {
     width: 30px;
     display: none;
 }
+/* aficher panier */
+#panier{
+    width: 400px;
+    overflow-x: hidden;
+    padding: 10px;
+    max-height: 50vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 50px;
+    right: 22px;
+    background-color: white;
+    box-shadow: 2px 2px 2px whitesmoke;
+    display: none;
+
+    
+}
+#panier h5{
+    text-align: center;
+}
+
+.panier-product-card{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    margin-top: 10px;
+}
+.img-title-panier{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.panier-shipping{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.panier-shipping button
+{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #FACC16;
+    border: none;
+   
+
+}
+.panier-shipping button a {
+    color: white;
+
+}
+.panier-shipping h3{
+    color: gray;
+
+}
+
 
 /* media Queries */
 @media  (max-width: 1063px)
@@ -641,8 +726,27 @@ main {
    .responsive-menu img{
     display: block;
 }
+.blockNav{
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+.blockNav ul{
+    display: grid;
+    place-items: center;
+}
+.blockNav .header-icon{
+    display: grid;
+    grid-template-columns: 40% 50%;
+}
 .product-container{
     grid-template-columns: 33% 33% 33%;
+
   
 }
 
@@ -657,6 +761,7 @@ main {
     {
       grid-template-columns: 1fr 1fr;
     }
+
   .product-container-2
   {
     grid-template-columns: 1fr 1fr;
@@ -666,13 +771,54 @@ main {
     gap: 10px;
     
   }
-  .left-side-page1 {
-    order: 1;
-  }
-  .left-side-page1 img{
+  .container .right-side-page1 img{
     width: 100%;
   }
+  .left-side-page1 {
+    order: 1;
+
+  } 
 }
+@media (max-width:672px) {
+    .leftSide-icone {
+        display: block ;
+    }
+    .left-side-page1 ul{
+        display: none;
+    }
+    #topMenu{
+        /* order: ; */
+    }
+     
+}
+/* page product detail */
+@media (max-width : 665px)
+{
+    .review-5
+    {
+        margin-left: 0px;
+
+    }
+    .add-button button
+    {
+        width: 150px;
+    }
+    .child-3
+    {
+        width: 95%;
+    }
+}
+@media (max-width : 500px)
+{
+    .review-5
+    {
+        margin-left: 0px;
+
+    }
+}
+
+
+
 @media  (max-width : 383px)
 {
     .product-container
@@ -685,6 +831,14 @@ main {
     grid-template-columns: 1fr;
   }
   
+}
+@media (max-width : 345px)
+{
+    .boxes
+    {
+        gap: 25px;
+
+    }
 }
 /* page _2 */
 @media (max-width :1000px)
@@ -705,7 +859,7 @@ main {
     }
     .section--3
     {
-        grid -template-columns: 1fr; 
+        grid-template-columns: 1fr; 
 
     }
     .conainter-recommended-product
@@ -716,4 +870,143 @@ main {
   
 
 
+}
+/* page product list  */
+@media (max-width:1086px) 
+{
+.product-container-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+@media (max-width:668px) 
+{
+
+.product-container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+
+   
+ 
+}
+
+}
+@media (max-width:578px) 
+{
+    .whole-page2{
+        grid-template-columns: 40% 1fr;
+    }
+
+}
+
+/* media page shiping card  */
+@media (max-width:951px)
+{
+  .par_ent
+  {
+  
+    grid-template-columns:  1fr;
+    gap:20px ;
+
+  }
+    
+
+}
+
+
+/* Contact page */
+.contact-container-page{
+    display: grid;
+    grid-template-columns:  40% 60%;
+}
+.contact-lefSide {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+  
+}
+.contact-lefSide h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+
+}
+.contact-lefSide h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contact-lefSide p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+  
+}
+.contact-rightSide{
+
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+ margin-top: 100px;
+
+
+  /* margin: 150px 0; */
+  
+}
+.contact-rightSide p{
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.contact-rightSide form{
+
+
+}
+.contact-rightSide input {
+    width: 50%;
+    margin: 3px 0;
+    height: 30px;
+    outline: none;
+}
+.contact-rightSide form textarea {
+    width: 50%;
+    margin-top: 10px;
+    outline: none;
+    
+}
+#btn{
+    width: 10%;
+    border-radius:5px;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #DDC69A;
+    border: none;
+}
+.contact-container-page{
+    background-color: #F1F1F1;
+}
+/* media page contact */
+@media(max-width :863px)
+{
+    .contact-container-page{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+     
+    
+    }
+    .contact-lefSide{
+        width: 100%;
+    }
+}
+@media(max-width:500px)
+{
+    ._product{
+        gap:40px;
+    }
+}
+@media(max-width:300px)
+{
+    ._product{
+        gap:10px;
+    }
 }

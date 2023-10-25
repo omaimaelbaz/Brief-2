@@ -5,29 +5,50 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
-    <header>
+    <header >
         <div class="logo">
             <img src="./logo/logo (1).png" alt="">
             <input type="text" placeholder="Chercher Un produit ,Une Marque Ou categorie ...">
-
         </div>
-        <div class="responsive-menu">
+        <!-- <div class="responsive-menu" onclick="aficherNavbar()"> -->
+            <div class="responsive-menu" onclick="aficherNavbar()">
+
             <img src="./logo/menu_icon-icons.com_72311.png" alt="">
         </div>
-        <nav>
+      
+        <nav id="nav" class="navhidden">
             <ul>
                 <li><a href=""> Sing in |</a></li>
                 <li><a href=""> Create account</a></li>
                 <div class="header-icon">
                     <img src="./logo/icon.png" alt="" >
                     <span>MAR</span>
-                    <img src="./logo/shopping-cart.png" alt="" > 
+                    <img src="./logo/shopping-cart.png"  onclick="aficherPanier()" alt="" > 
+                    <div id="panier">
+                        <h5>Product List</h5>
+                        <hr>
+                        <div class="panier-product-card">
+                            <h4>produit name</h4>
+                            <h4>Quantity </h4>
+                            <h4>price</h4>
+                        </div>
+                        <div id="panier2">
+
+                        </div>
+                        <div class="panier-shipping">
+                            <h3 id="total">Total 0</h3>
+                            <button type="submit"><a href="">shipping Detail</a></button>
+                        </div>
+                    </div>
                     <span>5</span>
                 </div>
               
             </ul>
+
         </nav>
     </header>
     <hr>
@@ -36,8 +57,25 @@
             <!-- section1 -->
         <div class="section2">
             <div class="container">
-                <div class="left-side-page1">
-                    <img src="./logo/Menu.png" alt="">
+                <div class="left-side-page1" id="leftSide1">
+                    <!-- <img src="./logo/Menu.png" alt=""> -->
+                    <div class="leftSide-icone">
+                        <img src="./logo/icons8-liste-de-tâches-32.png" alt="" onclick=" aficherCategory()">
+                    </div>
+                    <ul id="topMenu">
+                    
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                       
+                    </ul>
+                 
                 </div>
                 <div class="right-side-page1">
                     <img src="./logo/Slider.png" alt="">
@@ -49,7 +87,7 @@
                 <h2>#Best Remise</h2>
             </div>
             <div class="product-container">
-                <div class="card1" >
+                <div class="card1"  >
                     <img src="./logo/pic.jpeg" alt="">
                     <div class="product-info">
                         <span>1200$</span>
@@ -68,7 +106,7 @@
                         </div>
                         <div class="basket-shop-icon">
                             <span>|Sold 120</span> 
-                            <img src="./logo/basket.png" alt="">  
+                            <img src="./logo/basket.png" onclick="ajouterPanier('pic.jpeg')">  
                          </div>
                 </div>
                 
@@ -88,7 +126,28 @@
                     </div>
                     <div class="basket-shop-icon">
                         <span>|Sold 120</span> 
-                        <img src="./logo/basket.png" alt="">  
+                        <img src="./logo/basket.png"   onclick="ajouterPanier('pic.jpeg')" alt="">  
+                     </div> 
+            </div>
+            
+            </div>
+            <div class="card1" >
+                <img src="./logo/pic.jpeg" alt="">
+                <div class="product-info">
+                    <span>1200$</span>
+                    <span>999$</span>
+                    <p>Lorem ipsum dolor .</p>
+                    <p>Lorem, ipsum dolor sit .</p>
+                </div>
+                <div class="product-rank">
+                    <div class="star-rank">
+                        <img src="./logo/white-star-icon-10.png" alt="">
+                        <span>5.0</span>
+                    </div>
+                    <div class="basket-shop-icon" >
+                        <span>|Sold 120</span>
+                        <img src="./logo/basket.png" alt="" onclick="ajouterPanier('pic.jpeg')">  
+ 
                      </div>
             </div>
             
@@ -108,27 +167,7 @@
                     </div>
                     <div class="basket-shop-icon">
                         <span>|Sold 120</span> 
-                        <img src="./logo/basket.png" alt="">  
-                     </div>
-            </div>
-            
-            </div>
-            <div class="card1" >
-                <img src="./logo/pic.jpeg" alt="">
-                <div class="product-info">
-                    <span>1200$</span>
-                    <span>999$</span>
-                    <p>Lorem ipsum dolor .</p>
-                    <p>Lorem, ipsum dolor sit .</p>
-                </div>
-                <div class="product-rank">
-                    <div class="star-rank">
-                        <img src="./logo/white-star-icon-10.png" alt="">
-                        <span>5.0</span>
-                    </div>
-                    <div class="basket-shop-icon">
-                        <span>|Sold 120</span> 
-                        <img src="./logo/basket.png" alt="">  
+                        <img src="./logo/basket.png" alt="" onclick="ajouterPanier()">  
                      </div>
             </div>
             
@@ -138,7 +177,7 @@
             <div class="text">
                 <h2>#Best Product</h2>
             </div>
-            <div class="product-container-2">
+            <div class="product-container-2" id="add">
                 <div class="card1" >
                     <img src="./logo/pic5.jpeg" alt="">
                     <div class="container-info">
@@ -153,7 +192,7 @@
                                 <img src="./logo/white-star-icon-10.png" alt="">
                                 <span>5.0</span>
                             </div>
-                            <div class="basket-shop-icon">
+                            <div class="basket-shop-icon"onclick="ajouterPanier('pic5.jpeg')" >
                                 <span>|Sold 120</span> 
                                 <img src="./logo/basket.png" alt="">  
                             </div>
@@ -176,7 +215,7 @@
                             </div>
                             <div class="basket-shop-icon">
                                 <span>|Sold 120</span> 
-                                <img src="./logo/basket.png" alt="">  
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
                             </div>
                         </div> 
                     </div>
@@ -197,7 +236,7 @@
                             </div>
                             <div class="basket-shop-icon">
                                 <span>|Sold 120</span> 
-                                <img src="./logo/basket.png" alt="">  
+                                <img src="./logo/basket.png" alt=" "onclick="ajouterPanier('pic5.jpeg')">  
                             </div>
                         </div> 
                     </div>
@@ -218,7 +257,7 @@
                             </div>
                             <div class="basket-shop-icon">
                                 <span>|Sold 120</span> 
-                                <img src="./logo/basket.png" alt="">  
+                                <img src="./logo/basket.png" alt=""onclick="ajouterPanier('pic5.jpeg')">  
                             </div>
                         </div> 
                     </div>
@@ -239,7 +278,7 @@
                             </div>
                             <div class="basket-shop-icon">
                                 <span>|Sold 120</span> 
-                                <img src="./logo/basket.png" alt="">  
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
                             </div>
                         </div> 
                     </div>
@@ -260,7 +299,7 @@
                             </div>
                             <div class="basket-shop-icon">
                                 <span>|Sold 120</span> 
-                                <img src="./logo/basket.png" alt="">  
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
                             </div>
                         </div> 
                     </div>
@@ -281,7 +320,7 @@
                             </div>
                             <div class="basket-shop-icon">
                                 <span>|Sold 120</span> 
-                                <img src="./logo/basket.png" alt="">  
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
                             </div>
                         </div> 
                     </div>
@@ -302,7 +341,7 @@
                             </div>
                             <div class="basket-shop-icon">
                                 <span>|Sold 120</span> 
-                                <img src="./logo/basket.png" alt="">  
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
                             </div>
                         </div> 
                     </div>
@@ -322,4 +361,5 @@
 
     </footer>
         </body>
+
         </html>

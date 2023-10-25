@@ -78,5 +78,9 @@ footer a, footer h5 {
 footer h5 {
     text-align: center;
     margin-top: 10px;
+    display: grid;
+
 }
+
+
 

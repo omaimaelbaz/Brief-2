@@ -3,30 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Shipping Card</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
-    <header>
+    <header >
         <div class="logo">
             <img src="./logo/logo (1).png" alt="">
             <input type="text" placeholder="Chercher Un produit ,Une Marque Ou categorie ...">
-
         </div>
-        <nav>
+        <!-- <div class="responsive-menu" onclick="aficherNavbar()"> -->
+            <div class="responsive-menu" onclick="aficherNavbar()">
+
+            <img src="./logo/menu_icon-icons.com_72311.png" alt="">
+        </div>
+      
+        <nav id="nav" class="navhidden">
             <ul>
                 <li><a href=""> Sing in |</a></li>
                 <li><a href=""> Create account</a></li>
                 <div class="header-icon">
                     <img src="./logo/icon.png" alt="" >
                     <span>MAR</span>
-                    <img src="./logo/shopping-cart.png" alt="" > 
+                    <img src="./logo/shopping-cart.png"  onclick="aficherPanier()" alt="" > 
+                    <div id="panier">
+                        <h5>Product List</h5>
+                        <hr>
+                        <div class="panier-product-card">
+                            <h4>produit name</h4>
+                            <h4>Quantity </h4>
+                            <h4>price</h4>
+                        </div>
+                        <div id="panier2">
+
+                        </div>
+                        <div class="panier-shipping">
+                            <h3 id="total">Total 0</h3>
+                            <button type="submit"><a href="">shipping Detail</a></button>
+                        </div>
+                    </div>
                     <span>5</span>
                 </div>
               
             </ul>
+
         </nav>
     </header>
+    <hr>
         <!-- Main  -->
    
 <main>
