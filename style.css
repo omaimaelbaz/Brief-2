@@ -653,10 +653,10 @@ hr{
     margin-left: 20px;
 }
 
-main {
+ main {
 
     min-height: calc(100vh - 165px);
-}
+ } 
 .responsive-menu img{
     width: 30px;
     display: none;
@@ -913,8 +913,6 @@ main {
     
 
 }
-
-
 /* Contact page */
 .contact-container-page{
     display: grid;
@@ -947,19 +945,12 @@ main {
 
   flex-direction: column;
  margin-top: 100px;
-
-
-  /* margin: 150px 0; */
   
 }
 .contact-rightSide p{
     margin-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
-}
-.contact-rightSide form{
-
-
 }
 .contact-rightSide input {
     width: 50%;
@@ -973,6 +964,7 @@ main {
     outline: none;
     
 }
+
 #btn{
     width: 10%;
     border-radius:5px;
@@ -983,15 +975,20 @@ main {
 }
 .contact-container-page{
     background-color: #F1F1F1;
+    height: 82vh;
 }
+#main-contact{
+    height: 76.5vh;
+}
+
 /* media page contact */
 @media(max-width :863px)
 {
     .contact-container-page{
         display: grid;
         grid-template-columns: 1fr;
-        justify-content: center;
-     
+        place-content: center;
+
     
     }
     .contact-lefSide{
@@ -1003,6 +1000,10 @@ main {
     ._product{
         gap:40px;
     }
+
+#btn{
+    width: 25%;
+}
 }
 @media(max-width:300px)
 {

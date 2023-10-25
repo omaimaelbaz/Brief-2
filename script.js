@@ -70,13 +70,6 @@ function validEmail()
     }
     else {
         email.style.border='3px solid  red';
-        emailMes.innerHTML='Invalide Email / * format exemle@gmail.com .../';
+       
     }
 }
-
-
-
-
-
-
-
