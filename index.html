@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header >
+        <div class="logo">
+            <img src="./logo/logo (1).png" alt="">
+            <input type="text" placeholder="Chercher Un produit ,Une Marque Ou categorie ...">
+        </div>
+        <!-- <div class="responsive-menu" onclick="aficherNavbar()"> -->
+            <div class="responsive-menu" onclick="aficherNavbar()">
+
+            <img src="./logo/menu_icon-icons.com_72311.png" alt="">
+        </div>
+      
+        <nav id="nav" class="navhidden">
+            <ul>
+                <li><a href=""> Sing in |</a></li>
+                <li><a href="create-account.html"> Create account</a></li>
+                <div class="header-icon">
+                    <img src="./logo/icon.png" alt="" >
+                    <span>MAR</span>
+                    <img src="./logo/shopping-cart.png"  onclick="aficherPanier()" alt="" > 
+                    <div id="panier">
+                        <h5>Product List</h5>
+                        <hr>
+                        <div class="panier-product-card">
+                            <h4>produit name</h4>
+                            <h4>Quantity </h4>
+                            <h4>price</h4>
+                        </div>
+                        <div id="panier2">
+
+                        </div>
+                        <div class="panier-shipping">
+                            <h3 id="total">Total :0$</h3>
+                            <button type="submit"><a href="shipping-card.html">shipping Detail</a></button>
+                        </div>
+                    </div>
+                    <span>5</span>
+                </div>
+              
+            </ul>
+
+        </nav>
+    </header>
+    <hr>
+        <!-- Main  -->
+    <main>
+            <!-- section1 -->
+        <div class="section2">
+            <div class="container">
+                <div class="left-side-page1" id="leftSide1">
+                    <!-- <img src="./logo/Menu.png" alt=""> -->
+                    <div class="leftSide-icone">
+                        <img src="./logo/icons8-liste-de-tâches-32.png" alt="" onclick=" aficherCategory()">
+                    </div>
+                    <ul id="topMenu">
+                    
+                        <li><img src="./logo/shirt.png" alt=""><a href="index.html">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="product-detail.html">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="product-detail.html">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="shipping-card.html">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                        <li><img src="./logo/shirt.png" alt=""><a href="">Acccessoires</a></li>
+                       
+                    </ul>
+                 
+                </div>
+                <div class="right-side-page1">
+                    <img src="./logo/Slider.png" alt="">
+                </div>
+            </div>
+            <!-- section 2: Best Remise -->
+           
+            <div class="text">
+                <h2>#Best Remise</h2>
+            </div>
+            <div class="product-container">
+                <div class="card1"  >
+                    <img src="./logo/pic.jpeg" alt="">
+                    <div class="product-info">
+                        <span>1200$</span>
+                        <span>999$</span>
+                        <p>Lorem ipsum dolor .</p>
+                        <p>Lorem, ipsum dolor sit .</p>
+                    </div>
+                        <span>1200$</span>
+                        <span>999$ </span>
+                   
+                  
+                    <div class="product-rank">
+                        <div class="star-rank">
+                            <img src="./logo/white-star-icon-10.png" alt="">
+                            <span>5.0</span>
+                        </div>
+                        <div class="basket-shop-icon">
+                            <span>|Sold 120</span> 
+                            <img src="./logo/basket.png" onclick="ajouterPanier('pic.jpeg')">  
+                         </div>
+                </div>
+                
+                </div>
+            <div class="card1" >
+                <img src="./logo/pic.jpeg" alt="">
+                <div class="product-info">
+                    <span>1200$</span>
+                    <span>999$</span>
+                    <p>Lorem ipsum dolor .</p>
+                    <p>Lorem, ipsum dolor sit .</p>
+                </div>
+                <div class="product-rank">
+                    <div class="star-rank">
+                        <img src="./logo/white-star-icon-10.png" alt="">
+                        <span>5.0</span>
+                    </div>
+                    <div class="basket-shop-icon">
+                        <span>|Sold 120</span> 
+                        <img src="./logo/basket.png"   onclick="ajouterPanier('pic.jpeg')" alt="">  
+                     </div> 
+            </div>
+            
+            </div>
+            <div class="card1" >
+                <img src="./logo/pic.jpeg" alt="">
+                <div class="product-info">
+                    <span>1200$</span>
+                    <span>999$</span>
+                    <p>Lorem ipsum dolor .</p>
+                    <p>Lorem, ipsum dolor sit .</p>
+                </div>
+                <div class="product-rank">
+                    <div class="star-rank">
+                        <img src="./logo/white-star-icon-10.png" alt="">
+                        <span>5.0</span>
+                    </div>
+                    <div class="basket-shop-icon" >
+                        <span>|Sold 120</span>
+                        <img src="./logo/basket.png" alt="" onclick="ajouterPanier('pic.jpeg')">  
+ 
+                     </div>
+            </div>
+            
+            </div>
+            <div class="card1" >
+                <img src="./logo/pic.jpeg" alt="">
+                <div class="product-info">
+                    <span>1200$</span>
+                    <span>999$</span>
+                    <p>Lorem ipsum dolor .</p>
+                    <p>Lorem, ipsum dolor sit .</p>
+                </div>
+                <div class="product-rank">
+                    <div class="star-rank">
+                        <img src="./logo/white-star-icon-10.png" alt="">
+                        <span>5.0</span>
+                    </div>
+                    <div class="basket-shop-icon">
+                        <span>|Sold 120</span> 
+                        <img src="./logo/basket.png" alt="" onclick="ajouterPanier()">  
+                     </div>
+            </div>
+            
+            </div>
+            </div>
+            <!-- section 3: Best product -->
+            <div class="text">
+                <h2>#Best Product</h2>
+            </div>
+            <div class="product-container-2" id="add">
+                <div class="card1" >
+                    <img src="./logo/pic5.jpeg" alt="">
+                    <div class="container-info">
+                        <div class="product-info">
+                            <span>1200$</span>
+                            <span>999$</span>
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor sit .</p>
+                        </div>
+                        <div class="product-rank">
+                            <div class="star-rank">
+                                <img src="./logo/white-star-icon-10.png" alt="">
+                                <span>5.0</span>
+                            </div>
+                            <div class="basket-shop-icon"onclick="ajouterPanier('pic5.jpeg')" >
+                                <span>|Sold 120</span> 
+                                <img src="./logo/basket.png" alt="">  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card1" >
+                    <img src="./logo/pic5.jpeg" alt="">
+                    <div class="container-info">
+                        <div class="product-info">
+                            <span>1200$</span>
+                            <span>999$</span>
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor sit .</p>
+                        </div>
+                        <div class="product-rank">
+                            <div class="star-rank">
+                                <img src="./logo/white-star-icon-10.png" alt="">
+                                <span>5.0</span>
+                            </div>
+                            <div class="basket-shop-icon">
+                                <span>|Sold 120</span> 
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card1" >
+                    <img src="./logo/pic5.jpeg" alt="">
+                    <div class="container-info">
+                        <div class="product-info">
+                            <span>1200$</span>
+                            <span>999$</span>
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor sit .</p>
+                        </div>
+                        <div class="product-rank">
+                            <div class="star-rank">
+                                <img src="./logo/white-star-icon-10.png" alt="">
+                                <span>5.0</span>
+                            </div>
+                            <div class="basket-shop-icon">
+                                <span>|Sold 120</span> 
+                                <img src="./logo/basket.png" alt=" "onclick="ajouterPanier('pic5.jpeg')">  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card1" >
+                    <img src="./logo/pic5.jpeg" alt="">
+                    <div class="container-info">
+                        <div class="product-info">
+                            <span>1200$</span>
+                            <span>999$</span>
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor sit .</p>
+                        </div>
+                        <div class="product-rank">
+                            <div class="star-rank">
+                                <img src="./logo/white-star-icon-10.png" alt="">
+                                <span>5.0</span>
+                            </div>
+                            <div class="basket-shop-icon">
+                                <span>|Sold 120</span> 
+                                <img src="./logo/basket.png" alt=""onclick="ajouterPanier('pic5.jpeg')">  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card1" >
+                    <img src="./logo/pic5.jpeg" alt="">
+                    <div class="container-info">
+                        <div class="product-info">
+                            <span>1200$</span>
+                            <span>999$</span>
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor sit .</p>
+                        </div>
+                        <div class="product-rank">
+                            <div class="star-rank">
+                                <img src="./logo/white-star-icon-10.png" alt="">
+                                <span>5.0</span>
+                            </div>
+                            <div class="basket-shop-icon">
+                                <span>|Sold 120</span> 
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card1" >
+                    <img src="./logo/pic5.jpeg" alt="">
+                    <div class="container-info">
+                        <div class="product-info">
+                            <span>1200$</span>
+                            <span>999$</span>
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor sit .</p>
+                        </div>
+                        <div class="product-rank">
+                            <div class="star-rank">
+                                <img src="./logo/white-star-icon-10.png" alt="">
+                                <span>5.0</span>
+                            </div>
+                            <div class="basket-shop-icon">
+                                <span>|Sold 120</span> 
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card1" >
+                    <img src="./logo/pic5.jpeg" alt="">
+                    <div class="container-info">
+                        <div class="product-info">
+                            <span>1200$</span>
+                            <span>999$</span>
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor sit .</p>
+                        </div>
+                        <div class="product-rank">
+                            <div class="star-rank">
+                                <img src="./logo/white-star-icon-10.png" alt="">
+                                <span>5.0</span>
+                            </div>
+                            <div class="basket-shop-icon">
+                                <span>|Sold 120</span> 
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card1" >
+                    <img src="./logo/pic5.jpeg" alt="">
+                    <div class="container-info">
+                        <div class="product-info">
+                            <span>1200$</span>
+                            <span>999$</span>
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor sit .</p>
+                        </div>
+                        <div class="product-rank">
+                            <div class="star-rank">
+                                <img src="./logo/white-star-icon-10.png" alt="">
+                                <span>5.0</span>
+                            </div>
+                            <div class="basket-shop-icon">
+                                <span>|Sold 120</span> 
+                                <img src="./logo/basket.png" alt="" onclick= "ajouterPanier('pic5.jpeg')">  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+              
+              
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="contact-Page.html">Support</a></li>
+            <li><a href="">FQA</a></li>
+        </ul>
+        <h5>Copy Right 2023 By Oumaima</h5>
+
+    </footer>
+        </body>
+
+        </html>

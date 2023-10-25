@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header >
+        <div class="logo">
+            <img src="./logo/logo (1).png" alt="">
+            <input type="text" placeholder="Chercher Un produit ,Une Marque Ou categorie ...">
+        </div>
+        <!-- <div class="responsive-menu" onclick="aficherNavbar()"> -->
+            <div class="responsive-menu" onclick="aficherNavbar()">
+
+            <img src="./logo/menu_icon-icons.com_72311.png" alt="">
+        </div>
+      
+        <nav id="nav" class="navhidden">
+            <ul>
+                <li><a href=""> Sing in |</a></li>
+                <li><a href="contact-Page.html"> Create account</a></li>
+                <div class="header-icon">
+                    <img src="./logo/icon.png" alt="" >
+                    <span>MAR</span>
+                    <img src="./logo/shopping-cart.png"  onclick="aficherPanier()" alt="" > 
+                    <div id="panier">
+                        <h5>Product List</h5>
+                        <hr>
+                        <div class="panier-product-card">
+                            <h4>produit name</h4>
+                            <h4>Quantity </h4>
+                            <h4>price</h4>
+                        </div>
+                        <div id="panier2">
+
+                        </div>
+                        <div class="panier-shipping">
+                            <h3 id="total">Total 0</h3>
+                            <button type="submit"><a href="">shipping Detail</a></button>
+                        </div>
+                    </div>
+                    <span>5</span>
+                </div>
+              
+            </ul>
+
+        </nav>
+    </header>
+    <hr>
+<body>
+<main id="main-contact">
+<div class="contact-container-page">
+    <div class="contact-lefSide">
+        <h1>Contact Us</h1>
+        <h3>Our mailing Address is :</h3>
+        <p>
+            2736A hay dakhla street,
+            Morocco MA <br>
+            Phone:212629725325 <br>
+
+        </p>
+
+    </div>
+    <div class="contact-rightSide">
+        <div>
+            <p>Great vision without great people is irrelevant,
+                <br> let's work together.
+             </p>
+        </div>
+       
+        <div>
+            <form action="">
+                <input type="text" placeholder="Entrer your Name" required>
+                <input type="email" placeholder="Entrer a valid email address" id="mail" oninput="validEmail()">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Entrer Your message"></textarea>
+            </form>
+        </div>
+      <button type="submit" id="btn" >Submit</button>
+    
+    </div>
+</div>
+</main>
+</body>
+<footer id="footer-contact-page">
+    <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="contact-Page.html">Support</a></li>
+        <li><a href="">FQA</a></li>
+    </ul>
+    <h5>Copy Right 2023 By Oumaima</h5>
+
+</footer>
+   
+    
+</body>
+
+</html>
